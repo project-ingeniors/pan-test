@@ -14,8 +14,8 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request)
     {
-        $html_file = fopen('index-test.html','r');
-        $html = fread($html_file,filesize('index-test.html'));
+        $html_file = fopen('example.html','r');
+        $html = fread($html_file,filesize('example.html'));
         fclose($html_file);
 
         return new Response($html);

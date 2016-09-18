@@ -51,6 +51,22 @@
 			function acad(){
 				window.location="http://academics1.iitd.ac.in";
 			}
+			function showmenu(){
+				document.getElementById("listfont2").classList.toggle("show");
+			}
+			window.onclick = function(event) {
+				if (!event.target.matches('.listfont')) {
+
+					var dropdowns = document.getElementsByClassName("listfont2");
+					var i;
+					for (i = 0; i < dropdowns.length; i++) {
+						var openDropdown = dropdowns[i];
+						if (openDropdown.classList.contains('show')) {
+							openDropdown.classList.remove('show');
+						}
+					}
+				}
+			}
 		</script>
 	</head>
 	<body onload="javascript:window_onload()">
@@ -58,8 +74,8 @@
 			<img class="logo" src="./example files/logo.png">
 			<img class="logo2" src="./example files/iitdelhi_logo.jpg">
 			<div id="menu" class="dropdown">
-				<span class="listfont">Links to IIT Websites</span>
-				<div class="listfont2">
+				<input type="button" onclick="javascript:showmenu()" class="listfont" name="listfont" value="Links to IIT Websites"/>
+				<div class="listfont2" id="listfont2">
 					<input type="button" name="menubtn" id="x" class="item" value="IIT Home" onclick="javascript:IITDhome()"/>
 					<input type="button" name="menubtn" id="x" class="item" value="Computer Services" onclick="javascript:csc()"/>
 					<input type="button" name="menubtn" id="x" class="item" value="Library" onclick="javascript:lib()"/>

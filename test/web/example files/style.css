@@ -39,17 +39,19 @@ body {
 	cursor:pointer;
 }
 
-.listfont{
+input[name=listfont]{
 	position:relative;
-	left:38%;
-	top:3px;
+	width:100%;
+	height:100%;
 	color:white;
+	background-color:transparent;
 	text-align:center;
 	font-size:22pt;
 	font-family:arial;
 	z-index:1;
+	border:none;
+	border-radius:15px;
 }
-
 .listfont2{
 	position:relative;
 	top:6px;
@@ -87,16 +89,17 @@ input[name=menubtn]{
 	border-radius:4px;
 	background-color:rgb(250,250,230);
 	}
-#menu:hover{
+.listfont:hover{
 	background-color:rgb(180,108,76);
 }	
-.dropdown:hover .listfont2{
+.dropdown:hov .listfont2 {
 	display:block;
 	z-index:1;
 	opacity:1;
 	transition: visibility 0.5s ease-in-out;
+	box-shadow:0px 10px 10px black;
 }
-
+.show{display:block;z-index:1;} 
 .Cool_IITD_pic{
 	position:relative;
 	top:24pt;

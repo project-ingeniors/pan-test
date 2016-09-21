@@ -15,8 +15,8 @@ class ComplaintController extends Controller
      */
     public function complainAction(Request $request)
     {
-        $html_file = fopen('complaint.html','r');
-        $html = fread($html_file,filesize('complaint.html'));
+        $html_file = fopen('example files/complaint.html','r');
+        $html = fread($html_file,filesize('example files/complaint.html'));
         fclose($html_file);
 
         return new Response($html);

@@ -1,282 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+	<head>
+		<title>Ingeniors Test Site- Mark5</title>
+		<meta name="description" content="Mark-5"/>
+		<meta name="author" content="Viplove Chaudhary"/>
+		
+		<!-- insert CSS link here -->
+		<link rel="stylesheet" href="./example files/style.css" type="text/css">
+		<link rel="stylesheet" href="./example files/bootstrap.min.css">
+		<!-- insert jScript here-->
+		<script type="text/javascript">
+			function window_onload() {
+				window.addEventListener("scroll",navbar_reset_top,false);
+			}
 
-<head>
+			var navbar_top=531;
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+			function navbar_reset_top() {
+				var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+				if(scrollTop>navbar_top&&navbar.className==="main_links-normal") {
+					document.getElementById("navbar").className="main_links-fixed";
+				}
+				else if(scrollTop<navbar_top&&navbar.className==="main_links-fixed") {
+					document.getElementById("navbar").className="main_links-normal";
+				}
+			}
+			
+			function Lodge(){
+				window.location="./example files/complaint.html";
+			}
+			
+			function Track(){
+				window.location="./example files/track.html";
+			}
+			
+			function IITDhome(){
+				window.location="http://www.iitd.ac.in";
+			}
+			function csc(){
+				window.location="http://www.cc.iitd.ernet.in/CSC/";
+			}
+			function lib(){
+				window.location="http://library.iitd.ac.in";
+			}
+			function bsw(){
+				window.location="http://bsw.iitd.ac.in";
+			}
+			function bsa(){
+				window.location="http://bsa.iitd.ac.in";
+			}
+			function acad(){
+				window.location="http://academics1.iitd.ac.in";
+			}
+			function showmenu(){
+				document.getElementById("listfont2").classList.toggle("show");
+			}
+			window.onclick = function(event) {
+				if (!event.target.matches('.listfont')) {
 
-    <title>Project_Ingeniors</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-
-    <!-- Custom Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
-
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body id="page-top">
-
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top"><font color="215e38">Home</font></a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#about"><font color="215e38">About</font></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services"><font color="215e38">Values</font></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio"><font color="215e38">Services</font></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact"><font color="215e38">Contact</font></a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1><font color="215e38"></font></h1>
-                <p></p>
-                <a href="complaint-form" class="btn btn-primary btn-xl page-scroll">Lodge a complaint</a>
-            </div>
-        </div>
-    </header>
-
-    <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">We get them resolved swift and right!</h2>
-                    <hr class="light">
-                    <p class="text-faded">Got a problem? Just lodge them here and leave the rest to us</p>
-                    <a href="#" class="btn btn-default btn-xl">Yeah, right here</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Project_Ingeniors at Your Service</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                        <h3>Quality</h3>
-                        <p class="text-muted">We handle the complaints using an indigenous priority algorithm so that none of the grievance is left out.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                        <h3>Swift</h3>
-                        <p class="text-muted">We are fast!</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                        <h3>Up to Date</h3>
-                        <p class="text-muted">Monitor real-time grievance status</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                        <h3>Love</h3>
-                        <p class="text-muted">We love to serve you</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="no-padding" id="portfolio">
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Lodge a complaint
-                                </div>
-                                <div class="project-name">
-                                    Project_Ingeniors
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Check your complaint status
-                                </div>
-                                <div class="project-name">
-                                    Project_Ingeniors
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Grievances and redressal news feed
-                                </div>
-                                <div class="project-name">
-                                    Project_Ingeniors
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Public servants' performance statistics
-                                </div>
-                                <div class="project-name">
-                                    Project_Ingeniors
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Grievance statistics
-                                </div>
-                                <div class="project-name">
-                                    Project_Ingeniors
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Feedback
-                                </div>
-                                <div class="project-name">
-                                    Project_Ingeniors
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>Check this out!</h2>
-                <a href="#" class="btn btn-default btn-xl wow tada">Here</a>
-            </div>
-        </div>
-    </aside>
-
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Feel free to talk to us</h2>
-                    <hr class="primary">
-                    <p>Every query is entertainment for us. Feel free to talk.</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p>+91-8512-00-9320</p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:your-email@your-domain.com">ingeniors.team@gmail.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/wow.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/creative.js"></script>
-
-</body>
-
+					var dropdowns = document.getElementsByClassName("listfont2");
+					var i;
+					for (i = 0; i < dropdowns.length; i++) {
+						var openDropdown = dropdowns[i];
+						if (openDropdown.classList.contains('show')) {
+							openDropdown.classList.remove('show');
+						}
+					}
+				}
+			}
+		</script>
+	</head>
+	<body onload="javascript:window_onload()">
+		<div class="top_bar">
+			<img class="logo" src="./example files/logo.png">
+			<img class="logo2" src="./example files/iitdelhi_logo.jpg">
+			<div id="menu" class="dropdown">
+				<input type="button" onclick="javascript:showmenu()" class="listfont" name="listfont" value="Links to IIT Websites"/>
+				<div class="listfont2" id="listfont2">
+					<input type="button" name="menubtn" id="x" class="item" value="IIT Home" onclick="javascript:IITDhome()"/>
+					<input type="button" name="menubtn" id="x" class="item" value="Computer Services" onclick="javascript:csc()"/>
+					<input type="button" name="menubtn" id="x" class="item" value="Library" onclick="javascript:lib()"/>
+					<input type="button" name="menubtn" id="x" class="item" value="BSW" onclick="javascript:bsw()"/>
+					<input type="button" name="menubtn" id="x" class="item" value="BSA" onclick="javascript:bsa()"/>
+					<input type="button" name="menubtn" id="x" class="item" value="Academic Site" onclick="javascript:acad()"/>
+				</div>
+			</div>
+		</div>
+		<div class="intro">
+			<img class="Cool_IITD_pic" src="./example files/IIT-Delhi.jpg">
+			<p>IIT Delhi Grievance Redressal Portal</p>
+		</div>
+		<!--<div class="line" style="top:531px;"></div>-->
+		<div class="main_links-normal" id="navbar">
+			<input id="lodge" type="button" name="menu2" value="Lodge a Complaint" title="Lodge a Complaint" onclick="javascript:Lodge()"/>
+			<!--<div id="lodge">
+				
+				<a href="./example files/complaint.html">Lodge A Complaint</a>
+			</div>
+			<div id="track">
+				<a href="./example files/track.html">Track Complaint Status</a>
+			</div>-->
+			<input id="track" type="button" name="menu2" value="Track Complaint" title="Track your complaint status" onclick="javascript:Track()"/>
+		</div>
+		<div class="easy-peasy">
+			<h1>Complain in 3 Easy Steps</h1>
+			<div class="line1"/>
+			<div id="steps_1"><h1>Step 1 . . . . . . . . Step 2 . . . . . . . . Step 3</p></div>
+			
+			<div class="line2"/>
+		</div>
+		<div id="info">
+			<div class="about">
+				<h3>Who We Are</h3>
+				<br><br><br><br>
+				<p>I am Jack's complete lack of surprise.</p>
+			</div>
+			<div class="about" style="position:relative;top:-158px;left:900px;">
+				<h3>Objective</h3>
+				<br><br><br><br>
+				<p> World Domination! XD</p>
+			</div>
+		</div>
+		<div class="footer">
+			Contact Us
+			<div id="email">Drop us a Mail
+			<a href="mailto:ingeniors.team@gmail.com" class="btn btn-warning btn-lg"><span class="glyphicon glyphicon-envelope"></span>E-mail us</a>
+			</div>
+			<div id="co">Phone our Co-Founder<br>
+			<span class="label label-primary label-lg">+919540823867</span></div>
+		</div>
+		
+	</body>
 </html>

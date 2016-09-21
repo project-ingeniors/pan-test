@@ -6,9 +6,53 @@
 		<meta name="author" content="Viplove Chaudhary"/>
 		
 		<!-- insert CSS link here -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<!-- insert jScript here-->
 	</head>
-	<body>
-	Welcome! 
+	<body style="background-image:url(IIT-Delhi.jpg);background-position:top-left;background-attachment:fixed;background-repeat:no-repeat;background-size:cover;">
+	<div class="container-fluid" style="text-align:center;">
+		<div class="jumbotron"><h1>Lodge a Complaint</h1></div>
+	</div>
+	<div class="row">
+		<div class="col-md-offset-2  col-md-8" style="background-color:rgb(230,108,76);border-radius:10px;padding-bottom:20px;box-shadow:0px 10px 20px black">
+			<h1 style="text-align:center;">Complaint Form</h1>
+			<div style="background-color:white;border-left-style:solid;border-left-width:5px;border-left-color:rgba(180,180,180,0.5);padding:10px;">
+				<form>
+				<div class="form-group">
+					<label for="usr">Name of the Complainant:</label>
+					<input type="text" class="form-control" id="focusedInput" placeholder="John Connor">
+				</div>
+				<div class="form-group">
+					<label for="email">Email:</label>
+					<input type="email" class="form-control" id="focusedInput" placeholder="terminator2.rox@example.com">
+				</div>
+				<div class="form-group">
+					<label for="sel1">Concerned Department:</label>
+					<select class="form-control" id="sel1">
+						<option>Department of Defence</option>
+						<option>Department of Offence</option>
+						<option>Defence against Dark Arts</option>
+						<option>Potions</option>
+						<option>Department of Procrastination</option>
+						<option>Physics Department</option>
+						<option>Department of sitting around and browsing fb all day</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="plc">Place:</label>
+					<input type="text" class="form-control" id="focusedInput" placeholder="Insti Area">
+				</div>
+				<div class="form-group">
+					<label for="desc">Complaint Description:</label>
+					<textarea style="resize:none;" class="form-control" id="focusedInput" rows="3" placeholder="Ji hagge ka nal toot gya h!"></textarea>
+				</div>
+				<fieldset class="form-group">
+					    <input type="file" class="form-control-file" id="exampleInputFile">
+				</fieldset>
+				<div class="col-sm-offset-5"><button style="margin-left:3%;" type="submit" class="btn btn-primary btn-lg">Submit</button></div>
+				</form>
+			</div>
+		</div>
+	</div>	
 	</body>
 </html>

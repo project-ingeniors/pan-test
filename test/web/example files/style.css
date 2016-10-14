@@ -110,7 +110,7 @@ input[name=menubtn]{
 
 .main_links-normal{
 	position:absolute;
-	top:531px;
+	top:523px;
 	background-color:rgba(40,40,40,.90);
 	height:50pt;
 	opacity:1;
@@ -171,7 +171,7 @@ p{
 }
 .easy-peasy{
 	position:absolute;
-	top:598px;
+	top:590px;
 	left:0px;
 	height:400px;
 	width:1366px;
@@ -201,8 +201,8 @@ p{
 }
 #info{
 	position:relative;
-	top:125px;
-	height:300px;
+	top:225px;
+	height:250px;
 	width:1366px;
 	background-color:rgba(30,30,30,1);
 	text-align:center;
@@ -211,18 +211,21 @@ p{
 .about{
 	position:relative;
 	top:50px;
-	left:265px;
+	left:250px;
 	height:180px;
-	width:200px;
+	width:250px;
 	color:white;
 	background-color:transparent;
 }
-
-.footer{
+.about p{
+	color:gray;
+	font-variant:none;
+	font-size:16pt;
+}
+#footer{
 	height: 200px;
 	position:relative;
-	top:125px;
-	width:100%;
+	top:225px;
 	text-align:center;
 	background-color:rgb(240,240,220);
 	color:#4CAF50;
@@ -243,7 +246,7 @@ p{
 	position: relative;
 	height:100px;
 	top:-80px;
-	left:830px;
+	left:775px;
 	width:300px;
 	font-size:18pt;
 	font-family:"Lucida Console";
